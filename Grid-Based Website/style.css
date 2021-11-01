@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Zen+Kurenaido&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+body {
+  font-family: "Courier Prime", monospace;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #9d9d9d;
+}
+
+h3 {
+  margin: 10px 0;
+  color: #9d9d9d;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.nav-links a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #9d9d9d;
+}
+
+.home {
+  width: 80%;
+  height: 25vh;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  background: #fff url(rain.gif);
+}
+
+.header img {
+  border-radius: 999px;
+  width: 200px;
+  transition: transform 0.7s ease-in-out;
+}
+
+.header img:hover {
+  transform: rotate(360deg);
+}
+
+.wrapper {
+  width: 80%;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 1px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "bio social"
+    "skills education"
+    "projects contact";
+  column-gap: 10px;
+}
+
+.bio {
+  grid-area: bio;
+  padding: 10px;
+}
+
+.bio img {
+  border-radius: 30px;
+}
+
+.socials {
+  grid-area: social;
+  padding: 10px;
+}
+
+.socials a {
+  color: black;
+  font-size: 24px;
+  padding: 0 30px;
+  background: #fff;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  color: rgb(14 36 49 / 15%);
+}
+
+.socials li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  height: 50px;
+  padding: 10 30px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.skill {
+  grid-area: skills;
+  padding: 10px;
+}
+
+.skills p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 10 30px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.skills i {
+  padding: 0 10px;
+}
+
+.education {
+  grid: education;
+  padding: 10px;
+}
+
+.education p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.project {
+  grid-area: projects;
+  padding: 10px;
+}
+
+.project p {
+  padding: 5px 10px;
+}
+
+.project-info a {
+  color: black;
+  font-size: 24px;
+  background: #fff;
+}
+
+.project-info a:hover {
+  color: rgb(14 36 49 / 15%);
+}
+
+.contact {
+  grid-area: contact;
+  padding: 10px;
+}
+
+.contact a {
+  color: black;
+}
+
+.contact a:hover {
+  color: rgb(14 36 49 / 15%);
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  padding: 10px;
+  font-size: 16px;
+}
